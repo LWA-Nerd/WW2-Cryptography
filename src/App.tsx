@@ -1,15 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import { HashRouter } from 'react-router-dom'
-import './App.css'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <HashRouter></HashRouter>
+    <div className="App">
+      <HashRouter>
+        <Routes>
+          <Route path="/" element={<h1>Welcome to My Vite App</h1>} />
+        </Routes>
+      </HashRouter>
+    </div>
   )
 }
 
