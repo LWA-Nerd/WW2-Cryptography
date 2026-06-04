@@ -1,0 +1,49 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* hero takes up the full screen */
+}
+
+.video-overlay {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative; /* needed so overlay-text can absolute position inside it */
+}
+
+.background-video {
+  width: 100vw;
+  height: 100%;
+  filter: brightness(0.5);
+  object-fit: cover;
+}
+
+.overlay-text {
+    position: absolute;
+    text-align: center;
+    top: 0%;
+    left: 31.5%;
+    transform: translate(0, calc(50vh - var(--navbar-height)));
+
+    .hero-title {
+        font-weight: 600;
+        font-size: 4rem;
+        margin: 0;
+        text-shadow: 0 6px 8px rgba(31, 31, 31, 0.807);
+    }
+
+    p.hero-description {
+        font-size: 1.25rem;
+        margin: 0.5rem 0 0;
+    }
+}
+
+.home-content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  
+  .intro-stuff {
+    width: 50%;
+  }
+}

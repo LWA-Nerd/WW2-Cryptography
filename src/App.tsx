@@ -1,11 +1,14 @@
 import { HashRouter, Route, Routes } from 'react-router-dom'
+import Navbar from './components/Navbar/navbar'
+import Home from './pages/home/home'
 
 function App() {
   return (
     <div className="App">
       <HashRouter>
+        <Navbar />
         <Routes>
-          <Route path="/" element={<h1>Welcome to My Vite App</h1>} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </HashRouter>
     </div>
