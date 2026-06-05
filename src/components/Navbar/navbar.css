@@ -9,7 +9,6 @@
   box-sizing: border-box;
 
   .nav-brand a {
-    text-decoration: none;
     color: var(--primary-accent);
     font-size: 0.8rem;
     font-weight: 500;

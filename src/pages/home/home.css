@@ -42,8 +42,45 @@
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  
-  .intro-stuff {
-    width: 50%;
+  height: fit-content;
+
+  .stuff {
+    display: flex;
+    gap: 20rem;
+    margin: auto;
+    
+    .intro-words {
+        margin: 0;
+        width: 50%;
+    }
+
+    img {
+      width: 25%;
+      border-radius: 8px;
+      filter: drop-shadow(0 6px 8px rgba(31, 31, 31, 0.807));
+    }
+
+    img:hover {
+      filter: drop-shadow(0 6px 8px rgba(31, 31, 31, 0.807)) brightness(1.1);
+      transition: filter 0.3s ease;
+      cursor: pointer;
+    }
   }
+  .image-links {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      margin-top: 2rem;
+      margin: auto;
+      width: 50vw;
+
+      .machine-imgs {
+        width: 60%;
+        height: 60%;
+        object-fit: cover;
+        border-radius: 50px;
+        filter: drop-shadow(0 6px 8px rgba(31, 31, 31, 0.807));
+        margin: auto;
+      }
+    }
 }

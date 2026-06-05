@@ -1,6 +1,10 @@
 import video from '../../assets/WW2 Hero Montage.mp4';
 import './home.css';
 import DecryptedText from '../../components/DecryptedText';
+import image from '../../assets/images/ww2-cryptography.avif';
+import purple from '../../assets/images/purple.jpg';
+import engima from '../../assets/images/enigma.webp';
+import sigaba from '../../assets/images/Sigaba.jpg';
 
 export default function Home() {
     const title = "WW2 Cryptography";
@@ -24,28 +28,42 @@ export default function Home() {
                                 animateOn="view"
                             />
                         ))}
-                        <p className='hero-description'>Description stuff?</p>
+                        <p className='hero-description'>Every Message Was a Weapon. Every Cipher a Battlefield.</p>
                     </div>
                 </div>
             </div>
             <div className="home-content">
                 <div className="stuff">
-                    <p className='intro-stuff'>WWII was a war fought not only on land, air, and sea 
-                        but also in the shadows of code and ciphers. Cryptology, the science of 
+                    <p className='intro-words'>WWII was a war fought not only on land, air, and sea 
+                        but also in the shadows of codes and ciphers. Cryptology, the science of 
                         creating and breaking codes, became one of the most powerful weapons of the 
                         war. Nations relied on encrypted communications to protect military plans, 
                         while teams of codebreakers worked quietly and tirelessly to intercept and 
-                        decipher enemy messages.</p>
-                    <img />
+                        decipher enemy messages. A silent, less violent war was waged in the realm of 
+                        computer science and mathematics, where the stakes were just as high as on the 
+                        battlefield.
+                        <br /><br />
+                        Imagine you are a general in the middle of the woods, and you need to 
+                        warn your troops about an incoming attack. You know the enemy is 
+                        listening to every radio transmission you send. What do you do? 
+                        This is exactly the problem that every major nation faced in 
+                        World War 2, and cryptography was their answer.
+                        <br /><br />
+                        As wireless communications exploded during 
+                        the Second World War, so did the stakes of keeping communications 
+                        secret. Battles were decided not on the battlefield but rather in 
+                        quiet rooms where mathematicians raced to crack codes before the 
+                        enemy could act on them.
+                    </p>
+                    <img src={image} alt="WWII Cryptography" />
                 </div>
-                <p>Some more text</p>
-                <p>Some more text</p>
-                <p>Some more text</p>
-                <p>Some more text</p>
-                <p>Some more text</p>
-                <p>Some more text</p>
-                <p>Some more text</p>
-                <p>Some more text</p>
+                <br />
+                <div className="image-links">
+                    <img src={purple} alt="WWII Cryptography" className="machine-imgs" />
+                    <img src={engima} alt="WWII Cryptography" className="machine-imgs" />
+                    <img src={sigaba} alt="WWII Cryptography" className="machine-imgs" />
+                    <img src={sigaba} alt="WWII Cryptography" className="machine-imgs" />
+                </div>
             </div>
         </div>
     );
