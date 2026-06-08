@@ -1,0 +1,41 @@
+.first-yap{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 0 2rem;
+
+    .purple-img {
+        object-fit: cover;
+        max-width: 300px;
+        border-radius: 8px;
+        border: 1px solid var(--border);
+        filter: drop-shadow(0 0 4px var(--border));
+        transition: filter 0.3s ease;
+    }
+    
+    .purple-img:hover {
+        filter: drop-shadow(0 0 6px var(--border));
+        cursor: pointer;
+    }
+}
+
+.second-yap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 2rem;
+
+    .magic-img {
+        max-height: 300px;
+        border-radius: 8px;
+        border: 1px solid var(--border);
+        filter: drop-shadow(0 0 4px var(--border));
+        transition: filter 0.3s ease;
+    }
+
+    .magic-img:hover {
+        filter: drop-shadow(0 0 6px var(--border));
+        cursor: pointer;
+    }
+}

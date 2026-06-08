@@ -1,0 +1,33 @@
+.sigaba-yap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 2rem;
+
+    .sigaba-img {
+        max-height: 400px;
+        border-radius: 8px;
+        border: 1px solid var(--border);
+        filter: drop-shadow(0 0 4px var(--border));
+        transition: filter 0.3s ease;
+    }
+
+    .sigaba-img:hover {
+        filter: drop-shadow(0 0 6px var(--border));
+        cursor: pointer;
+    }
+}
+
+.sigaba-video {
+    margin-left: calc(50%-280px);
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    filter: drop-shadow(0 0 4px var(--border));
+    transition: filter 0.3s ease;
+}
+
+.sigaba-video:hover {
+    filter: drop-shadow(0 0 10px var(--border));
+    cursor: pointer;
+}

@@ -30,6 +30,12 @@ a {
   padding: 0;
 }
 
+p.yap {
+    width: 80%;
+    margin: 2rem auto;
+    /* text-indent: 2rem; */
+}
+
 /* :root {
   --text: #6b6375;
   --text-h: #08060d;

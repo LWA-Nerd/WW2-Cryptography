@@ -1,0 +1,79 @@
+.idek-anymore {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 0 2rem;
+
+    .blet-img {
+        object-fit: cover;
+        max-width: 400px;
+        border-radius: 8px;
+        border: 1px solid var(--border);
+        filter: drop-shadow(0 0 4px var(--border));
+        transition: filter 0.3s ease;
+    }
+
+    .blet-img:hover {
+        filter: drop-shadow(0 0 6px var(--border));
+        cursor: pointer;
+    }
+
+    .colum-thing {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blet-yap {
+        margin-top: 0.5em
+    }
+}
+
+.red {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    padding: 0 2rem;
+
+    .red-message {
+        max-height: 200px;
+        border-radius: 8px;
+        border: 1px solid var(--border);
+        filter: drop-shadow(0 0 4px var(--border));
+        transition: filter 0.3s ease;
+    }
+
+    .red-message:hover {
+        filter: drop-shadow(0 0 6px var(--border));
+        cursor: pointer;
+    }
+}
+
+.at {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    padding: 0 2rem;
+
+    .uhh {
+        display: flex;
+        flex-direction: column;
+
+        .uhh-yap {
+            margin-top: 0.5em
+        }
+    }
+
+    .at-img {
+        object-fit: cover;
+        max-width: 200px;
+        border-radius: 8px;
+        border: 1px solid var(--border);
+        filter: drop-shadow(0 0 4px var(--border));
+        transition: filter 0.3s ease;
+    }
+
+    .at-img:hover {
+        filter: drop-shadow(0 0 6px var(--border));
+        cursor: pointer;
+    }
+}

@@ -1,6 +1,9 @@
-import video from '../../assets/WW2 Hero Montage.mp4';
 import './home.css';
+
+import HoverImage from '../../components/HoverImage/HoverImage';
 import DecryptedText from '../../components/DecryptedText';
+
+import video from '../../assets/WW2 Hero Montage.mp4';
 import image from '../../assets/images/ww2-cryptography.avif';
 import purple from '../../assets/images/purple.jpg';
 import engima from '../../assets/images/enigma.webp';
@@ -59,10 +62,14 @@ export default function Home() {
                 </div>
                 <br />
                 <div className="image-links">
-                    <img src={purple} alt="WWII Cryptography" className="machine-imgs" />
+                    {/* <HoverImage src={purple} alt="Learn about the Purple Machine" className="machine-imgs" linkTo="/purple" />
+                    <HoverImage src={engima} alt="Learn about the Enigma Machine" className="machine-imgs" linkTo="/enigma" />
+                    <HoverImage src={sigaba} alt="Learn about the Sigaba Machine" className="machine-imgs" linkTo="/sigaba" />
+                    <HoverImage src={sigaba} alt="Learn about the Sigaba Machine" className="machine-imgs" linkTo="/sigaba" /> */}
+                    {/* <img src={purple} alt="WWII Cryptography" className="machine-imgs" />
                     <img src={engima} alt="WWII Cryptography" className="machine-imgs" />
                     <img src={sigaba} alt="WWII Cryptography" className="machine-imgs" />
-                    <img src={sigaba} alt="WWII Cryptography" className="machine-imgs" />
+                    <img src={sigaba} alt="WWII Cryptography" className="machine-imgs" /> */}
                 </div>
             </div>
         </div>

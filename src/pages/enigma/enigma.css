@@ -1,0 +1,70 @@
+.enigma-page {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.enigma-image {
+    margin: auto;
+    height: 20rem;
+    display: block;
+}
+
+.enigma-history {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 2rem;
+
+    .enigma-history-image {
+        max-height: 400px;
+        border-radius: 8px;
+        border: 1px solid var(--border);
+        filter: drop-shadow(0 0 4px var(--border));
+        transition: filter 0.3s ease;
+    }
+
+    .enigma-history-image:hover {
+        filter: drop-shadow(0 0 6px var(--border));
+        cursor: pointer;
+    }
+}
+
+.caption {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--secondary-accent);
+    margin-top: 0.5rem;
+}
+
+.enigma-mechanics {
+    .enigma-video-container {
+        margin: auto;
+        justify-content: center;
+
+        .enigma-video {
+            left: 50%;
+            margin: auto;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            filter: drop-shadow(0 0 4px var(--border));
+            transition: filter 0.3s ease;
+        }
+
+        .enigma-video:hover {
+            filter: drop-shadow(0 0 10px var(--border));
+            cursor: pointer;
+        }
+    }
+}
+
+.btn {
+    margin: 0.5em auto;
+    .next-btn {
+        margin: 0.5em auto;
+    }
+}

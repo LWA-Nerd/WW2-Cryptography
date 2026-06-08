@@ -1,0 +1,19 @@
+.subtitle-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 1rem;
+    color: var(--primary-accent);
+}
+
+.subtitle-lines {
+    width: 30%;
+    height: 2px;
+    background-color: var(--secondary-accent);
+}
+
+.subtitle {
+    margin: 0.25rem;
+}
