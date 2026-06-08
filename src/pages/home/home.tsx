@@ -8,6 +8,7 @@ import image from '../../assets/images/ww2-cryptography.avif';
 import purple from '../../assets/images/purple.jpg';
 import engima from '../../assets/images/enigma.webp';
 import sigaba from '../../assets/images/Sigaba.jpg';
+import bp from '../../assets/images/bletchley-park2.jpg'
 
 export default function Home() {
     const title = "WW2 Cryptography";
@@ -62,10 +63,10 @@ export default function Home() {
                 </div>
                 <br />
                 <div className="image-links">
-                    {/* <HoverImage src={purple} alt="Learn about the Purple Machine" className="machine-imgs" linkTo="/purple" />
+                    <HoverImage src={purple} alt="Learn about the Purple Machine" className="machine-imgs" linkTo="/purple" />
                     <HoverImage src={engima} alt="Learn about the Enigma Machine" className="machine-imgs" linkTo="/enigma" />
                     <HoverImage src={sigaba} alt="Learn about the Sigaba Machine" className="machine-imgs" linkTo="/sigaba" />
-                    <HoverImage src={sigaba} alt="Learn about the Sigaba Machine" className="machine-imgs" linkTo="/sigaba" /> */}
+                    <HoverImage src={bp} alt="Learn about Bletchley Park" className="machine-imgs" linkTo="/bletchley-park" />
                     {/* <img src={purple} alt="WWII Cryptography" className="machine-imgs" />
                     <img src={engima} alt="WWII Cryptography" className="machine-imgs" />
                     <img src={sigaba} alt="WWII Cryptography" className="machine-imgs" />

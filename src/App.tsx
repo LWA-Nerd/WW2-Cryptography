@@ -5,6 +5,7 @@ import Enigma from './pages/enigma/engima'
 import BletchleyPark from './pages/bletchley-park/bletchley';
 import Sigaba from './pages/sigaba/sigaba';
 import Purple from './pages/purple/purple';
+import Credit from './pages/bibliography/credit';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/bletchley-park" element={<BletchleyPark />} />
           <Route path="/sigaba" element={<Sigaba />} />
           <Route path="/purple" element={<Purple />} />
+          <Route path="/bibliography" element={<Credit />} />
         </Routes>
       </HashRouter>
     </div>

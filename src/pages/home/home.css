@@ -76,7 +76,7 @@
 
       .machine-imgs {
         width: 60%;
-        height: 60%;
+        height: 70%;
         object-fit: cover;
         border-radius: 50px;
         filter: drop-shadow(0 6px 8px rgba(31, 31, 31, 0.807));

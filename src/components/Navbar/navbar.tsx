@@ -17,6 +17,7 @@ export default function Navbar() {
                 <li><Link to="/bletchley-park" className={`nav-link ${pathname === '/bletchley-park' ? 'active' : ''}`}>Bletchley Park</Link></li>
                 <li><Link to="/purple" className={`nav-link ${pathname === '/purple' ? 'active' : ''}`}>Purple</Link></li>
                 <li><Link to="/sigaba" className={`nav-link ${pathname === '/sigaba' ? 'active' : ''}`}>SIGABA</Link></li>
+                <li><Link to="/bibliography" className={`nav-link ${pathname === '/bibliography' ? 'active' : ''}`}>Bibliography</Link></li>
             </ul>
         </nav>
     );

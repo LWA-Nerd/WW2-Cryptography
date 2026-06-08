@@ -4,6 +4,7 @@
     align-items: center;
     gap: 2rem;
     padding: 0 2rem;
+    margin-bottom: 50px;
 
     .sigaba-img {
         max-height: 400px;
@@ -20,7 +21,9 @@
 }
 
 .sigaba-video {
-    margin-left: calc(50%-280px);
+    display: block;
+    width: min(560px, calc(100% - 4rem));
+    margin: 0 auto;
     border-radius: 8px;
     border: 1px solid var(--border);
     filter: drop-shadow(0 0 4px var(--border));

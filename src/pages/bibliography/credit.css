@@ -1,0 +1,102 @@
+.credit-page {
+    min-height: calc(100vh - var(--navbar-height));
+    padding: 1rem 2rem 4rem;
+}
+
+.credit-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.credit-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    box-sizing: border-box;
+    /* border: 1px solid rgba(100, 116, 139, 0.65);
+    border-radius: 8px;
+    background:
+        linear-gradient(135deg, rgba(30, 41, 59, 0.96), rgba(15, 23, 42, 0.88));
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.28); */
+}
+
+.credit-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.credit-label {
+    margin: 0;
+    color: var(--primary-accent);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.credit-txt {
+    margin: 0;
+    color: var(--text);
+    font-size: 1.05rem;
+}
+
+.source-code {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.5rem;
+    padding: 0 1rem;
+    border: 1px solid var(--primary-accent);
+    border-radius: 8px;
+    color: var(--primary);
+    background: var(--primary-accent);
+    font-weight: 700;
+    transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.source-code:hover,
+.source-code:focus-visible {
+    filter: brightness(1.08);
+    transform: translateY(-1px);
+}
+
+.credit-img {
+    display: block;
+    width: min(100%, 840px);
+    max-height: 70vh;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--secondary);
+    filter: drop-shadow(0 0 6px rgba(100, 116, 139, 0.75));
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.credit-img:hover {
+    filter: drop-shadow(0 0 12px rgba(100, 116, 139, 0.95));
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+@media (max-width: 640px) {
+    .credit-page {
+        padding: 0.5rem 1rem 3rem;
+    }
+
+    .credit-panel {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .source-code {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}

@@ -1,5 +1,64 @@
-.hover-image:hover {
-    filter: drop-shadow(0 6px 8px rgba(31, 31, 31, 0.807)) brightness(1.1);
-    transition: filter 0.3s ease;
+.hover-image-container {
+    overflow: hidden;
+    border-radius: 8px;
+    filter: drop-shadow(0 6px 8px rgba(31, 31, 31, 0.807));
+}
+
+.hover-link {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: inherit;
+    line-height: 0;
+}
+
+.hover-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.hover-image-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+    box-sizing: border-box;
+    background: linear-gradient(
+        to top,
+        rgba(8, 12, 20, 0.88) 0%,
+        rgba(8, 12, 20, 0.58) 38%,
+        rgba(8, 12, 20, 0) 72%
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hover-image-text {
+    color: var(--text);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
+}
+
+.hover-link:hover,
+.hover-link:focus-visible {
     cursor: pointer;
+}
+
+.hover-link:hover .hover-image,
+.hover-link:focus-visible .hover-image {
+    filter: brightness(1.08);
+    transform: scale(1.02);
+}
+
+.hover-link:hover .hover-image-overlay,
+.hover-link:focus-visible .hover-image-overlay {
+    opacity: 1;
 }
